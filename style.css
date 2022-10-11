@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)),
+    url("images/banner-img.jpg") center/cover no-repeat;
+  /* background: url("./images/banner-img.jpg") center/cover no-repeat; */
+  color: rgb(230, 224, 224);
+  padding: 20px 40px;
+}
+
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+}
+
+.logo {
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.logo:hover {
+  color: hsl(48, 92%, 62%);
+}
+
+.hamburgerMenu {
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburgerMenu:hover {
+  color: hsl(48, 92%, 62%);
+}
+
+.hamburgerMenu:hover .menuIcon * {
+  background-color: hsl(48, 92%, 62%);
+}
+
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: rgb(216, 197, 197);
+  margin: 4px;
+  border-radius: 5px;
+}
+
+main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.tagline {
+  text-align: center;
+  padding: 50px 150px;
+}
+
+.top {
+  border-bottom: 1px solid white;
+  padding: 30px 20px;
+}
+
+.title {
+  font-size: 2.25rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  font-family: Playfair display;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  text-transform: uppercase;
+}
+
+.cta--btn {
+  background: transparent;
+  color: #fff;
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-size: 1.25rem;
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+  border: 3px solid white;
+}
+
+.cta--btn:hover {
+  background-color: transparent;
+}
+
+/* ----------------------------- Services design starts from here  -----------------------------*/
+
+section {
+  padding: 40px 80px;
+}
+
+.service--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 80px;
+}
+
+.heading {
+  display: inline-block;
+  color: hsl(48, 92%, 62%);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.3ch;
+  border-bottom: 5px solid black;
+  padding: 0px 100px 5px 0;
+  margin: 5px 0 50px 0;
+}
+
+.service {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.serviceIcon {
+  font-size: 2.5rem;
+  color: rgb(46, 46, 46);
+}
+
+.serviceContent * {
+  margin: 10px 0;
+}
+
+.service--title {
+  font-size: 1.45rem;
+  color: #2e2e2e;
+}
+
+.service--description {
+  padding-right: 50px;
+  line-height: 3ch;
+}
+
+.secondary--btn {
+  padding: 10px 20px;
+  border: 2px solid #f7d445;
+  text-transform: uppercase;
+  color: white;
+  background-color: hsl(48, 92%, 62%);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.secondary--btn:hover {
+  opacity: 0.8;
+}
+
+.booking {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url("images/banner-img.jpg") center/cover no-repeat;
+  color: white;
+  /* height: 40vh; */
+  padding: 40px 40px;
+}
+
+.bookingForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.formItems {
+  display: flex;
+  flex-direction: column;
+  /* gap: 20px; */
+  justify-content: center;
+}
+
+.formItems label {
+  padding-bottom: 20px;
+}
+
+.formItems input {
+  border: none;
+  outline: none;
+  width: 400px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.formItems:last-child {
+  padding-top: 40px;
+}
+
+.formItems:last-child input {
+  border: 1px solid white;
+  background-color: #2e2e2e;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+}
+
+.formItems:last-child:hover input {
+  background-color: rgba(46, 46, 46, 0.9);
+}
+
+.room {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.roomContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.roomImage {
+  overflow: hidden;
+}
+
+.roomImage img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.roomDetail {
+  padding: 20px;
+  background-color: #2e2e2e;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.roomDetail ul {
+  list-style-image: url("images/arrow-alt-circle-right-solid.svg");
+  list-style-position: inside;
+  padding: 20px;
+}
+.roomDetail ul li {
+  margin: 10px;
+}
+
+.rate {
+  margin: 25px 0;
+}
+
+.rate span {
+  color: #f7d445;
+  font-size: 2rem;
+}
+
+.sale--btn {
+  padding: 10px 20px;
+  width: 30%;
+  margin: auto;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.roomImage:hover img {
+  transform: scale(1.2);
+}
+
+.sale--btn:hover {
+  opacity: 0.7;
+}
+
+.testimonials {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)),
+    url("./images/customer-banner.jpg") fixed center/cover no-repeat;
+}
+.testimonialContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 150px;
+  background-color: white;
+  text-align: center;
+  line-height: 3ch;
+  transition: all 0.8s ease-in-out;
+  margin-top: 20px;
+}
+
+.testimonial:hover {
+  transform: translateY(-15px);
+}
+
+.rating {
+  color: #f7d445;
+  margin: 0 0 20px;
+}
+
+.testimonial p {
+  color: #615f5f;
+  margin: 20px 0;
+}
+
+.customerProfile {
+  display: flex;
+  flex-direction: column;
+  color: #615f5f;
+}
+
+.customerProfile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.social--icons {
+  display: flex;
+}
